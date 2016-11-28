@@ -62,7 +62,7 @@ public class MusicShop {
                         break;
                     }
             }
-        } while (wishToBuy.equalsIgnoreCase("y"));
+        } while (true);
     }
 
     private static void loadInventar() {
