@@ -22,10 +22,11 @@ public class MusicShop {
 
     private static void sellMusicalInstrument() {
         Scanner scan = new Scanner(System.in);
+        String wishToBuy;
         do {
 
             System.out.println("Do you want to buy something? Press Y or N");
-            String wishToBuy= scan.next();
+           wishToBuy= scan.next();
             if(wishToBuy.equals("n")){
                 return;
             }
@@ -61,7 +62,7 @@ public class MusicShop {
                         break;
                     }
             }
-        } while (true);
+        } while (wishToBuy.equalsIgnoreCase("y"));
     }
 
     private static void loadInventar() {
